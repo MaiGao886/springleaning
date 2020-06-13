@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/springbootlearning/springbootlearning.iml" filepath="$PROJECT_DIR$/springbootlearning/springbootlearning.iml" />
       <module fileurl="file://$PROJECT_DIR$/springleaning.iml" filepath="$PROJECT_DIR$/springleaning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/upload/upload.iml" filepath="$PROJECT_DIR$/upload/upload.iml" />
     </modules>
   </component>
 </project>
