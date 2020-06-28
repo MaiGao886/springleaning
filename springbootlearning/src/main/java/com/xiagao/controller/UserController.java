@@ -29,6 +29,11 @@ public class UserController {
         User user = userService.findByUsername(username);
         return user;
     }
+    @RequestMapping(value = "/findUserById.do", method = RequestMethod.POST)
+    public User findUserById(Integer id){
+        User user = userService.findById(id);
+        return user;
+    }
 
     @RequestMapping(value = "/findAll.do", method = RequestMethod.GET)
     public List<User> findAll(){
@@ -36,7 +41,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/saveOne.do", method = RequestMethod.POST)
-    public String saveOne(User user){
+    public String saveOne(@RequestBody User user){
         boolean b = userService.saveOne(user);
         if (b){
             return "添加成功";
