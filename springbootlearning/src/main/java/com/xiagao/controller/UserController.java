@@ -7,6 +7,8 @@ import com.xiagao.service.userServiceImpl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -24,8 +26,13 @@ public class UserController {
 
     @RequestMapping(value = "/findUserByUsername.do", method = RequestMethod.POST)
     public User findUserByUsername(@RequestBody String username){
-        User user = userService.findUserByUsername(username);
+        User user = userService.findByUsername(username);
         return user;
+    }
+
+    @RequestMapping(value = "/findAll.do", method = RequestMethod.GET)
+    public List<User> findAll(){
+        return userService.findAll();
     }
 
     @RequestMapping(value = "/saveOne.do", method = RequestMethod.POST)

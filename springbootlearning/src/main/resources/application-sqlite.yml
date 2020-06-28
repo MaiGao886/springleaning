@@ -25,7 +25,7 @@ spring:
   jpa:
     show-sql: false
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     generate-ddl: true
     #如果你用的是Hibernate4，那么可以在这个地址https://github.com/EnigmaBridge/hibernate4-sqlite-dialect 找到Hibernate4-sqlite，
     #直接添加依赖就好。我们使用的是Hibernate5，需要添加如下几个类，设置对应的Hibernate5对sqlite的方言
