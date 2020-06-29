@@ -7,7 +7,6 @@ import java.util.Objects;
 @Entity
 @Table(name = "user_m")
 public class User {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

@@ -1,6 +1,5 @@
-my:
-  name: xiagao
-  message: 你好
+server:
+  port:8080
 spring:
   http:
     encoding:
@@ -30,3 +29,9 @@ spring:
     #如果你用的是Hibernate4，那么可以在这个地址https://github.com/EnigmaBridge/hibernate4-sqlite-dialect 找到Hibernate4-sqlite，
     #直接添加依赖就好。我们使用的是Hibernate5，需要添加如下几个类，设置对应的Hibernate5对sqlite的方言
     database-platform: com.xiagao.core.sqlite.SQLiteDialect
+#mybatis配置
+mybatis:
+  type-aliases-package: com.xiagao.model.pojo.mybatis
+  mapper-locations: classpath:mybatis/mappers/*Mapper.xml
+
+

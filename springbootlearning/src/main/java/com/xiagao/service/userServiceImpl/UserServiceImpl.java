@@ -1,7 +1,9 @@
 package com.xiagao.service.userServiceImpl;
 
 import com.xiagao.dao.UserDao;
+import com.xiagao.dao.mapper.UserMMapper;
 import com.xiagao.model.pojo.jpa.User;
+import com.xiagao.model.pojo.mybatis.UserM;
 import com.xiagao.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,11 +15,19 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserDao userRepository;
+    @Autowired
+    private UserMMapper userMMapper;
 
     @Override
     public User findByUsername(String username) {
         User user = userRepository.findByUsername(username);
         return user;
+    }
+
+    @Override
+    public UserM selectByUsername(String username) {
+        UserM userM = userMMapper.selectByUsername(username);
+        return userM;
     }
 
     @Override

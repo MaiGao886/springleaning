@@ -2,6 +2,7 @@ package com.xiagao.controller;
 
 
 import com.xiagao.model.pojo.jpa.User;
+import com.xiagao.model.pojo.mybatis.UserM;
 import com.xiagao.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -24,8 +25,8 @@ public class UserController {
 
 
     @RequestMapping(value = "/findUserByUsername.do", method = RequestMethod.POST)
-    public User findUserByUsername(@RequestBody String username){
-        User user = userService.findByUsername(username);
+    public UserM findUserByUsername(String username){
+        UserM user = userService.selectByUsername(username);
         return user;
     }
     @RequestMapping(value = "/findUserById.do", method = RequestMethod.POST)
