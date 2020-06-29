@@ -6,7 +6,7 @@
 <generatorConfiguration>
     <!--执行generator插件生成文件的命令： call mvn mybatis-generator:generate -e -->
     <!--classPathEntry:数据库的JDBC驱动,换成你自己的驱动位置 可选 -->
-    <classPathEntry location="C:\Users\13094\.m2\repository\mysql\mysql-connector-java\8.0.18\mysql-connector-java-8.0.18.jar" />
+    <classPathEntry location="C:\Users\赵博涛\.m2\repository\mysql\mysql-connector-java\8.0.19\mysql-connector-java-8.0.19.jar" />
 
     <!-- 一个数据库一个context -->
     <!--defaultModelType="flat" 大数据字段，不分表 -->
@@ -35,7 +35,7 @@
         </commentGenerator>
         <!-- jdbc连接 -->
         <jdbcConnection driverClass="org.sqlite.JDBC"
-                        connectionURL="jdbc:sqlite:D:\workspace\springleaning\springbootlearning\src\main\webapp\database\database.sqlite"
+                        connectionURL="jdbc:sqlite:F:\workspace\springlearning\springbootlearning\src\main\webapp\database\database.sqlite"
                         userId=""
                         password="" />
         <!-- 类型转换 -->
