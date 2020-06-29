@@ -1,6 +1,6 @@
 package com.xiagao.service;
 
-import com.xiagao.model.pojo.User;
+import com.xiagao.model.pojo.jpa.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

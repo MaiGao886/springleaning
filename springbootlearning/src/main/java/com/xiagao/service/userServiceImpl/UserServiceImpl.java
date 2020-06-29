@@ -1,7 +1,7 @@
 package com.xiagao.service.userServiceImpl;
 
 import com.xiagao.dao.UserDao;
-import com.xiagao.model.pojo.User;
+import com.xiagao.model.pojo.jpa.User;
 import com.xiagao.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

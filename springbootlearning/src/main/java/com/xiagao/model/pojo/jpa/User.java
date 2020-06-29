@@ -1,11 +1,11 @@
-package com.xiagao.model.pojo;
+package com.xiagao.model.pojo.jpa;
 
 
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "user")
+@Table(name = "user_m")
 public class User {
 
     @Id

@@ -1,9 +1,8 @@
 package com.xiagao.controller;
 
 
-import com.xiagao.model.pojo.User;
+import com.xiagao.model.pojo.jpa.User;
 import com.xiagao.service.UserService;
-import com.xiagao.service.userServiceImpl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
