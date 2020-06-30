@@ -9,3 +9,4 @@ out
 gen
 
 springbootlearning/target/
+springbootlearning/src/main/resources/mybatisConfig/generatorConfig.xml
