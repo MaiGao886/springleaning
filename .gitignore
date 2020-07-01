@@ -9,4 +9,5 @@ out
 gen
 
 springbootlearning/target/
-springbootlearning/src/main/resources/mybatisConfig/generatorConfig.xml
+springleaning.iml
+springbootlearning/springbootlearning.iml
