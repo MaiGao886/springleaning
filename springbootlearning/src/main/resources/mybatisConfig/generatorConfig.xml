@@ -6,7 +6,7 @@
 <generatorConfiguration>
     <!--执行generator插件生成文件的命令： call mvn mybatis-generator:generate -e -->
     <!--classPathEntry:数据库的JDBC驱动,换成你自己的驱动位置 可选 -->
-    <classPathEntry location="C:\Users\13094\.m2\repository\mysql\mysql-connector-java\8.0.18\mysql-connector-java-8.0.18.jar" />
+    <classPathEntry location="src\main\resources\lib\mysql-connector-java-8.0.18.jar" />
 
     <!-- 一个数据库一个context -->
     <!--defaultModelType="flat" 大数据字段，不分表 -->
