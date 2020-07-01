@@ -3,7 +3,6 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/upload/pom.xml" />
         <option value="$PROJECT_DIR$/springbootlearning/pom.xml" />
       </list>
     </option>

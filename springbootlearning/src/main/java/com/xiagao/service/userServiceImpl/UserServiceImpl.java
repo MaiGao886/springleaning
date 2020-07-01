@@ -1,25 +1,26 @@
 package com.xiagao.service.userServiceImpl;
 
 import com.xiagao.dao.UserDao;
-import com.xiagao.mapper.UserMMapper;
+import com.xiagao.mapper.UserEntityMapper;
 import com.xiagao.model.pojo.jpa.User;
-import com.xiagao.model.pojo.mybatis.UserM;
+import com.xiagao.model.pojo.mybatis.UserEntity;
 import com.xiagao.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
+//import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Autowired
+    @Resource
     private UserDao userRepository;
-    @Autowired
-    private UserMMapper userMMapper;
-    @Autowired
-    private ElasticsearchRestTemplate elasticsearchRestTemplate;
+    @Resource
+    private UserEntityMapper userEntityMapper;
+//    @Resource
+//    private ElasticsearchRestTemplate elasticsearchRestTemplate;
 
 
     @Override
@@ -29,9 +30,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserM selectByUsername(String username) {
-        UserM userM = userMMapper.selectByUsername(username);
-        return userM;
+    public UserEntity selectByUsername(String username) {
+        UserEntity userEntity = userEntityMapper.selectByUsername(username);
+        return userEntity;
     }
 
     @Override
