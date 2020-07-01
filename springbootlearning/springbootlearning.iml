@@ -24,7 +24,7 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
-          <factory-entry name="entityManagerFactory" />
+          <factory-entry name="entityManagerFactory" value="0339a4d5-1eee-4cc2-8e0d-af4391da80f1" />
           <factory-entry name="springbootlearning" />
         </datasource-mapping>
         <naming-strategy-map />
