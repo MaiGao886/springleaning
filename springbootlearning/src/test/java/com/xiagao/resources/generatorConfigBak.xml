@@ -188,7 +188,7 @@
             15. delimitAllColumns:设置是否所有生成的SQL中的列名都使用标识符引起来.默认为false,delimitIdentifiers参考context的属性
             注意,table里面很多参数都是对javaModelGenerator,context等元素的默认属性的一个复写
         -->
-        <table tableName="user_m"
+        <table tableName="t_user"
                domainObjectName="User"
                enableCountByExample="false"
                enableUpdateByExample="false"
