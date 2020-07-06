@@ -1,6 +1,9 @@
 package com.xiagao.mapper;
 
 import com.xiagao.model.pojo.mybatis.UserEntity;
+
+import org.springframework.data.jpa.repository.Query;
+
 import java.util.List;
 
 public interface UserEntityMapper {
@@ -43,4 +46,6 @@ public interface UserEntityMapper {
      * @mbggenerated Thu Jul 02 16:31:03 CST 2020
      */
     int updateByPrimaryKey(UserEntity record);
+
+   UserEntity selectByUsername(String username);
 }

@@ -11,14 +11,14 @@ spring:
     # 使用druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
     #mysql数据库版本大于8.0使用
-    driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: com.mysql.cj.jdbc.Driver
     # mysql版本小于8.0使用
-#    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
 
     #serverTimezone=UTC,mysql数据库版本大于8.0并且在安装数据库是未指定时区会默认用美国时区，所以在这里配置时区
-    url: jdbc:mysql:///gogogo?serverTimezone=UTC
-    username: root
-    password: 691006
+    url: jdbc:mysql://123.207.30.36:3306/springDB
+    username: sunquan
+    password: sunlan..
     # 配置初始化大小、最小、最大
     tomcat:
       maxActive: 20
